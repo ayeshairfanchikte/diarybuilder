@@ -17,6 +17,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import com.allandroidprojects.ecomsample.R;
+import com.allandroidprojects.ecomsample.fragments.CustomShopFragment;
 import com.allandroidprojects.ecomsample.fragments.ImageListFragment;
 import com.allandroidprojects.ecomsample.miscellaneous.EmptyActivity;
 import com.allandroidprojects.ecomsample.notification.NotificationCountSetClass;
@@ -146,16 +147,20 @@ public class MainActivity extends AppCompatActivity
 
     private void setupViewPager(ViewPager viewPager) {
         Adapter adapter = new Adapter(getSupportFragmentManager());
-        ImageListFragment fragment = new ImageListFragment();
+        CustomShopFragment shopFragment = new CustomShopFragment();
         Bundle bundle = new Bundle();
         bundle.putInt("type", 1);
-        fragment.setArguments(bundle);
-        adapter.addFragment(fragment, "Customize");
-        fragment = new ImageListFragment();
+        shopFragment.setArguments(bundle);
+        adapter.addFragment(shopFragment, "Customize");
+
+
+
+        ImageListFragment imgFragment1 = new ImageListFragment();
+//        fragment1 = new ImageListFragment();
         bundle = new Bundle();
         bundle.putInt("type", 2);
-        fragment.setArguments(bundle);
-        adapter.addFragment(fragment, "Shop");
+        imgFragment1.setArguments(bundle);
+        adapter.addFragment(imgFragment1, "Shop");
         viewPager.setAdapter(adapter);
     }
 

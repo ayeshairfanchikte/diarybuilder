@@ -41,7 +41,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_login_new);
         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         if (user!=null){
             startActivity(new Intent(LoginActivity.this,MainActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK));
@@ -52,15 +52,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     private void initUI() {
-        toolbar = findViewById(R.id.toolbar);
-        backButtonToolbar = findViewById(R.id.backButtonToolbar);
-        backButtonToolbar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onBackPressed();
-            }
-        });
-
         emailLayout = findViewById(R.id.textInputEmail);
         passwordLayout = findViewById(R.id.textInputPassword);
         email = findViewById(R.id.user_email);

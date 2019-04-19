@@ -31,7 +31,11 @@
 
     <string name="search_hint">Search for Products, Brands and More</string>
 
-
+    <string-array name="page_sizes">
+        <item>A3</item>
+        <item>A4</item>
+        <item>A5</item>
+    </string-array>
     <!--Intro slider texts -->
     <string name="title_activity_welcome">Home Screen</string>
     <string name="next">NEXT</string>

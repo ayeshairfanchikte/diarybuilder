@@ -64,6 +64,13 @@
         <activity android:name=".miscellaneous.EmptyActivity">
         </activity>
         <activity android:name=".startup.SelectSignUpOrLoginActivity"/>
+        <activity android:name=".startup.TestActivity">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN"/>-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+            <!--</intent-filter>-->
+        </activity>
     </application>
 
 </manifest>

@@ -7,8 +7,8 @@
               android:background="@color/mustard_yellow"
               android:orientation="vertical"
               android:gravity="center">
-<ImageView android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:src="@drawable/ic_apps_black_48dp"
+<ImageView android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:src="@mipmap/ic_logo"
            android:layout_gravity="center"/>
 </LinearLayout>

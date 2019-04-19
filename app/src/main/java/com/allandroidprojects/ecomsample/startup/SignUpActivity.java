@@ -34,7 +34,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signup);
+        setContentView(R.layout.activity_singup_new);
         initUI();
     }
     private boolean isValid(String content, String type){
@@ -70,14 +70,6 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         userPasswordConfirmLayout = findViewById(R.id.textInputPasswordConfirm);
 
         toolbar = findViewById(R.id.toolbar);
-        backButtonToolbar = findViewById(R.id.backButtonToolbar);
-        backButtonToolbar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onBackPressed();
-            }
-        });
-
         userEmail = findViewById(R.id.user_email);
         userPassword = findViewById(R.id.user_password);
         userPasswordConfirmed = findViewById(R.id.user_passwordConfirm);
